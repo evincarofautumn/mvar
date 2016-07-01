@@ -22,7 +22,7 @@ void mvar_free (MVar *mvar);
  * Put a new value into an MVar, blocking until the MVar is
  * empty.
  */
-void mvar_put (MVar *mvar, void *value);
+int mvar_put (MVar *mvar, void *value);
 
 /*
  * Read the value of an MVar, blocking until the MVar is
@@ -63,4 +63,4 @@ void *mvar_try_read (MVar *mvar);
  */
 void *mvar_try_take (MVar *mvar);
 
-#endif /* MVAR_H */
+#endif /* MVAR_H_479A0E6B_CE77_44EE_9CE9_90F54D2A79F8 */
